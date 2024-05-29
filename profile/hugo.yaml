@@ -1,0 +1,447 @@
+baseURL: "https://pranavkhade.github.io"
+languageCode: "en-us"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+#Menus:
+  #main:
+    #- identifier: blog
+    #  name: Blog
+    #  title: Blog posts
+    #  url: /blogs
+    #  weight: 1
+    #- identifier: gallery
+    #  name: Gallery
+    #  title: Blog posts
+    #  url: /gallery
+    #  weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: 
+  description: Text about my professional site.
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/logo.gif"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Pranav M. Khade"
+    subtitle: "I know a little about proteins and how to design them"
+    content: 
+    image: /portrait.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "Pranav_Khade_Resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Pranavkhade
+        - icon: fab fa-google
+          url: https://scholar.google.it/citations?user=TIYhuRMAAAAJ&hl=en
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/pranavkhade/
+        - icon: fab fa-orcid
+          url: https://orcid.org/0000-0002-0756-9828
+        - icon: fab fa-researchgate
+          url: https://www.researchgate.net/profile/Pranav-Khade
+        - icon: fab fa-x-twitter
+          url: https://twitter.com/khadepranav
+        
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I particularly enjoy the challenges in multidisciplinary projects, so I wish to make a career in that direction. I have collaborated with cheminformatics professors, mathematicians, statisticians, experimental scientists, AI experts, and even civil engineers. I have been a speaker at a few prestigious conferences. I love to work in a diverse and open workplace where creativity, diversity, and innovation are valued. I strongly think that good science can only be fostered under ZERO tolerance for contempt and discrimination.
+
+      I currently work as a Postdoctoral Fellow at Genentech in the Prescient Design division. I have completed three degrees in life sciences including a Ph.D. degree in Computational Biology. Master's degree in Bioinformatics and a Bachelor's degree in Biotechnology.
+
+      During my Ph.D. I have successfully conceptualized, initiated, designed, and implemented several novel and innovative ideas, carrying them out to successful completion that resulted in seven publications. I received the Research Excellence Award and graduation honor for it. I have also built a software package called PACKing and Motion Analysis (PACKMAN) around my research, which has tens of thousands of downloads on the Python Package Index (PyPI) (https://github.com/Pranavkhade/PACKMAN). The ultimate goal of my thesis has been to explain the global motions of the proteins using protein packing information, and I have made significant progress with this. Along with the research work, I have also completed various courses on diverse topics such as Structural Bioinformatics, Statistical Bioinformatics, Bioinformatics Algorithms, Systems Biology, and many more.
+
+      During my Master's training, I learned more about Bioinformatics in Cell Biology, Immunology, Structural Biology, Genetics, Omics, Evolution, Cheminformatics, Data Mining, and Biostatistics. Overall, my Masters's degree included a detailed overview of Bioinformatics. I learned everything from predicting epitomes given viral protein sequences to relating Single Nucleotide Polymorphism to phenotypes. My Masters's research project was in Cheminformatics, where I designed a method to overcome the shortcomings of stochastic conformer generators.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Graph Neural Networks (GNNs)"
+        - "Attention Mechanisms"
+        - "Explainable Artificial  (XAI)"
+        - Protein Specific AI Architectures
+        - Coarse Grained HOOMD Simulations
+        - Delaunay Tessellations
+        - Protein Geometry
+        - Elastic Network Models
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Postdoctoral Fellow"
+        company: "Genentech"
+        companyUrl: "https://www.gene.com/scientists/our-scientists/prescient-design"
+        date: "May 2022 - present"
+        featuredLink:
+          enable: true
+          name: "View the preprint"
+          url: "https://www.biorxiv.org/content/10.1101/2023.06.26.546331v1.abstract"
+        content:  |
+          - Worked with group of machine learning expert in Prescient Design division.
+          - Built a novel Graph Neural Network to predict developability
+          - Work on Ab and TCR binding prediction with AI ML and Novel Coarse-grained MD
+          - Work on investigating geometric patterns responsible for molecular interactions.
+          - Got invited to talk about my research at [PEGS 2024 (Boston)](https://www.pegsummit.com/machine-learning-for-protein-engineering)
+
+      - job: "Research Assistant"
+        company: "Iowa State University"
+        companyUrl: "https://www.iastate.edu/"
+        date: "Aug 2018 - April 2022"
+        featuredLink:
+          enable: true
+          url: "https://www.bcb.iastate.edu/people/pranav-khade"
+        content: |
+            - Aided in research input into four grants from which $1M NSF (1856477) was awarded in 2019 and several others under review
+            - Served on Bioinformatics and Computational Biology Graduate Student Organization Committee (2019)
+      
+      - job: "Developer"
+        company: "py-PACKMAN"
+        companyUrl: "https://github.com/Pranavkhade/PACKMAN"
+        date: "Forever"
+        
+        featuredLink:
+          name: 'Paper'
+          enable: true
+          url: "https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac007/6525212"
+        
+        content: |
+            - API, Library and GUI development experience.
+            - Designed a public library for python around my research and it has more than 60k downloads.
+            - Continous integration (CI) experience with Travis CI and GitHub Actions.
+            - Git repo maintainance experience.
+            - Sphinx documentation and Readthedocs implementation.
+      
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Ph.D. in Computational Biology"
+        school:
+          name: "Iowa State University, Ames, IA"
+          url: "https://faculty.sites.iastate.edu/jernigan/"
+        date: "August 2018 - April 2022"
+        content: |-
+            - Duration: 4 years 8 months (including 1 year rotations)
+            - Total publications: 8 (4 first author)
+
+            Extra curricular:
+            - Served on Bioinformatics and [Computational Biology Graduate Student Organization Committee](https://www.stuorg.iastate.edu/bcbgso/information) (2019)
+      - title: "Masters in Bioinformatics"
+        school:
+          name: "Bioinformatics Centre, University of Pune"
+          url: "https://bioinfo.net.in/"
+        date: "2014 - 2016"
+        GPA: "5.34 out of 6"
+        content: |-
+          - Thesis Project: Systematic Conformer Generation (Cheminformatics)
+          - Training: Systems Biology, Immunology, Structural Biology, Genetics, Omics, Evolution, Cheminformatics, and Data Mining
+
+          Extra curricular:
+          - Won a silver medal as a captain of the volleyball team at University.
+        featuredLink:
+          enable: False
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "B.Sc in Biotechnology"
+        school:
+          name: "Abasaheb Garware College, University of Pune"
+          url: "https://garwarecollege.mespune.in/academics/department/science/department-of-biotechnology/"
+        date: "2011 - 2014"
+        GPA: "First Class"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |-
+          - This degree equips me with experience communicating with and thinking like wet lab scientists.
+          - Designed and carried out wet lab experiments firsthand.
+          - Formal training in Animal and Plant tissue culture, microbiology, fermentation, Chromatography and many more wet lab techniques.
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: PEGS 2024 Boston Speaker
+        content: I was invited for a talk on "Meaningful Biological Priors as Guiding Constraints for Graph Neural Network-Based Antibody Developability Prediction" in "Machine Learning Approaches for Protein Engineering" section.
+        image: https://www.pegsummit.com/images/librariesprovider30/template-images/24/logo-nav.png
+        url: https://www.pegsummit.com/machine-learning-for-protein-engineering
+      - title: BPS Annual Meeting, San Francisco - Platform Speaker (2022)
+        content: I was invited to talk about my research on protein structure and dynamics characterization and potential for protein engineering.
+        image: https://www.biophysics.org/portals/0/BPSAssets/Global/MeetingSkins/bps22am_topbanner.png
+        url: https://biophysics.cld.bz/Biophysical-Society-66th-Annual-Meeting-Program-Guide/48/
+
+      - title: Research Excellence Award
+        content: The intent of this program is to recognize "the best of the best" graduating students who have submitted theses and dissertations.
+        url: https://www.grad-college.iastate.edu/awards/rex/
+        image: https://cdn.theme.iastate.edu/img/isu-stacked.svg
+      - title: NSF Travel Grant
+        content: Support to attend “International Conference on Mathematical Multiscale Modeling in Biology”- Guanacaste, Costa Rica.
+        image: https://new.nsf.gov/themes/custom/nsf_theme/components/images/logo/logo-desktop.svg
+      - title: IGIB-GNR Scholarship
+        content: Issued for Excellent performance in the entrance and academics at the Bioinformatics Centre, University of Pune.
+        image: "https://csirhrdg.res.in/SiteContent/PublicAllContent/pubAssets/images/csir_logo.png"
+      - title: DBT Fellowship
+        content: For each semester of M. Sc., top-performing students are awarded a monthly fellowship.
+        image: http://164.100.77.83/sites/all/themes/Biotech/images/logo.png
+      - title: BCB Travel Fund
+        content: Based on my performance and work presentation
+        image: https://www.bcb.iastate.edu/themes/contrib/iastate_theme/isu-stacked.svg
+
+  # projects
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: Delaunay Graph Neural Network (D-GNN)
+        content: Meaningful Biological Priors as Guiding Constraints for Graph Neural Network-Based Antibody Developability Prediction.
+        image: https://www.biorxiv.org/content/biorxiv/early/2023/06/28/2023.06.26.546331/F1.medium.gif
+        featured:
+          name: Preprint
+          link: https://www.biorxiv.org/content/10.1101/2023.06.26.546331v1.abstract
+        badges:
+          - "GNN"
+          - "Antibody Developability"
+          - "Protein Engineering"
+          - "Delaunay Tessellations"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/prescient-design/D-GNN
+          
+      - title: hdANM
+        content: The motions predicted with this new elastic network model provide important conceptual advantages for understanding the underlying biological mechanisms. As a matter of fact, the generated hinge movements are found to resemble the expected mechanisms required for the biological functions of diverse proteins. Another advantage of this model is that the domain-level coarse graining makes it significantly more computationally efficient, enabling the generation of hinge motions within even the largest molecular assemblies, such as those from cryo-electron microscopy.
+        image: hdanm.gif
+        featured:
+          name: Research Paper
+          link: https://doi.org/10.1016/j.bpj.2021.10.017
+        badges:
+          - "Protein Dynamics"
+          - "Protein Engineering"
+        links:
+          - icon: fas fa-paperclip
+            url: https://py-packman.readthedocs.io/en/latest/tutorials/hdANM.html#tutorials-hdanm
+
+      - title: Protein Hinge Prediction
+        content:  This was a fountation study before hdANM. This new method to identify hinges within protein structures is called PACKMAN. The predicted hinges are validated by using permutation tests on B-factors. Hinge prediction results are compared against lists of manually curated hinge residues, and the results suggest that PACKMAN is robust enough to reproduce the known conformational changes and is able to predict hinge regions equally well from either the open or the closed forms of a protein.
+        image: https://ars.els-cdn.com/content/image/1-s2.0-S0022283619306837-gr7.jpg
+        featured:
+          name: Research Paper
+          link: https://doi.org/10.1016/j.jmb.2019.11.018
+        badges:
+          - "Protein Hinges"
+          - "Protein Dynamics"
+          - "Graph Theory"
+          - "Delaunay Tessellations"
+        links:
+          - icon: fas fa-paperclip
+            url: https://py-packman.readthedocs.io/en/latest/tutorials/hinge_predict_cli.html#tutorials-hinge-prediction-cli
+
+      - title: Protein Entropy Estimation
+        content: Even though the method is simple, the entropies computed exhibit an extremely high correlation with the entropies previously derived by other methods based on quasi-harmonic motions, quantum mechanics, and molecular dynamics simulations.
+        image: https://pubs.acs.org/cms/10.1021/acsomega.2c00999/asset/images/medium/ao2c00999_0002.gif
+        featured:
+          name: Research Paper
+          link: https://doi.org/10.1021/acsomega.2c00999
+        badges:
+          - "Protein Entropy"
+          - "Protein Dynamics"
+          - "Voronoi Tessellations"
+        links:
+          - icon: fas fa-paperclip
+            url: https://py-packman.readthedocs.io/en/latest/tutorials/entropy_cli.html#tutorials-entropy-cli
+
+      - title: Protein Structural Compliance
+        content: This present study considers only elastic network models, but the approach could be applied further to conventional atomic molecular dynamics. Compliance is found to have a slightly better agreement with the experimental B-factors, perhaps reflecting its bias toward the effects of local perturbations, in contrast to mean square fluctuations.
+        image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7649752/bin/nihms-1603924-f0001.jpg
+        featured:
+          name: Research Paper
+          link: https://doi.org/10.1002/prot.25968
+        badges:
+          - "Protein Compliance"
+          - "Elastic Network Models"
+        links:
+          - icon: fas fa-paperclip
+            url: https://py-packman.readthedocs.io/en/latest/tutorials/compliance.html#tutorials-compliance
+
+      - title: Protein Fluctuations
+        content: This study concludes that  It follows that protein fluctuations should be considered not just as the intrinsic fluctuations of the internal dynamics, but also equally well as responses to external solvent forces, or as a combination of both.
+        image: https://www.mdpi.com/applsci/applsci-12-02344/article_deploy/html/images/applsci-12-02344-g002-550.jpg
+        featured:
+          name: Research Paper
+          link: https://doi.org/10.3390/app12052344
+        badges:
+          - "Protein Fluctuations"
+          - "Elastic Network Models"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Pranavkhade/PACKMAN
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:pranav.m.khade@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/Pranavkhade
+      linkedin: https://www.linkedin.com/in/pranavkhade/
+      twitter: https://twitter.com/khadepranav
+      
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
