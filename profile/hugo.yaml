@@ -148,19 +148,16 @@ params:
           url: https://orcid.org/0000-0002-0756-9828
         - icon: fab fa-researchgate
           url: https://www.researchgate.net/profile/Pranav-Khade
-        - icon: fab fa-x-twitter
-          url: https://twitter.com/khadepranav
-        
 
   # About
   about:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: |-
-      I particularly enjoy the challenges in multidisciplinary projects, so I wish to make a career in that direction. I have collaborated with cheminformatics professors, mathematicians, statisticians, experimental scientists, AI experts, and even civil engineers. I have been a speaker at a few prestigious conferences. I love to work in a diverse and open workplace where creativity, diversity, and innovation are valued. I strongly think that good science can only be fostered under ZERO tolerance for contempt and discrimination.
+    content: |
+      I have collaborated with cheminformatics professors, mathematicians, statisticians, experimental scientists, AI experts, and even civil engineers. I have been a speaker at a few prestigious conferences. I love to work in a diverse and open workplace where creativity, diversity, and innovation are valued.
 
-      I currently work as a Postdoctoral Fellow at Genentech in the Prescient Design division. I have completed three degrees in life sciences including a Ph.D. degree in Computational Biology. Master's degree in Bioinformatics and a Bachelor's degree in Biotechnology.
+      I currently work as a Scientist at Gilead Sciences, and my research duties involve computational design of therapeutic proteins, including Antibodies, VHHs and immunization targets using AI ML methods I developed and industry standards. I have completed three degrees in life sciences including a Ph.D. degree in Computational Biology. Master's degree in Bioinformatics and a Bachelor's degree in Biotechnology and an industry postdoc at Prescient Design (Genentech Inc.).
 
       During my Ph.D. I have successfully conceptualized, initiated, designed, and implemented several novel and innovative ideas, carrying them out to successful completion that resulted in seven publications. I received the Research Excellence Award and graduation honor for it. I have also built a software package called PACKing and Motion Analysis (PACKMAN) around my research, which has tens of thousands of downloads on the Python Package Index (PyPI) (https://github.com/Pranavkhade/PACKMAN). The ultimate goal of my thesis has been to explain the global motions of the proteins using protein packing information, and I have made significant progress with this. Along with the research work, I have also completed various courses on diverse topics such as Structural Bioinformatics, Statistical Bioinformatics, Bioinformatics Algorithms, Systems Biology, and many more.
 
@@ -173,7 +170,6 @@ params:
         - "Attention Mechanisms"
         - "Explainable Artificial  (XAI)"
         - Protein Specific AI Architectures
-        - Coarse Grained HOOMD Simulations
         - Delaunay Tessellations
         - Protein Geometry
         - Elastic Network Models
@@ -183,10 +179,27 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Scientist"
+        company: "Gilead Sciences"
+        companyUrl: "https://www.gilead.com/"
+        date: "April 2025 - Present"
+        content: |
+          - Working on computational design of therapeutic proteins, including Antibodies, VHHs and immunization targets using AI ML methods I developed and industry standards.
+          - Collaborating with experimental scientists to validate the designs.
+          - Leading a team of researchers in the development of novel protein engineering methods.
+          - Participate in cutting-edge development of AI/ML models for drug discovery and scientific applications. 
+          - Development and optimize exploratory analysis tools for interpreting multi-dimension dataset generated during biologics discovery workflow. 
+          - Apply and advance artificial intelligence and machine learning (AI/ML) approaches, particular generative AI models, across stages of large molecule workflows, including molecular property predictions, AI-guided candidate selection and engineering. 
+          - Work closely with data engineers to manage and preprocess large datasets, ensuring data quality and pipeline scalability. 
+          - Communicate findings and insights to stakeholders through reports, presentations, and visualizations. 
+          - Engage actively in the evaluation and coordination of collaborations with academic institutions, startups, and outsourcing partners. 
+          - Stay updated on the latest advancements in AI/ML and computational biology and apply new techniques to improve existing workflows. 
+          - Mentor and provide guidance to junior data scientists and research associates.
+
       - job: "Postdoctoral Fellow"
         company: "Genentech"
         companyUrl: "https://www.gene.com/scientists/our-scientists/prescient-design"
-        date: "May 2022 - present"
+        date: "May 2022 - April 2025"
         featuredLink:
           enable: true
           name: "View the preprint"
@@ -309,6 +322,21 @@ params:
     enable: true
     title: "Projects"
     items:
+      - title: BRIDGE Encoder
+        content: Biophysical Representation of Interfaces via Delaunay-based Graph Embeddings (BRIDGE), a coarse-grained graph neural network that captures embeddings containing meaningful information about protein-protein interactions. The BRIDGE model takes as input graphs defined by the Delaunay tesselation of the individual chains and is pre-trained to predict the Delaunay adjacency at the protein-protein interface. The model achieves state-of-the-art performance in this task. The biophysical information captured by the BRIDGE embedding layer due to this pre-training task can further be used for downstream tasks, including for therapeutically relevant property prediction.
+        image: https://www.biorxiv.org/content/biorxiv/early/2025/04/17/2025.04.11.648307/F1.large.jpg
+        featured:
+          name: Preprint
+          link: https://www.biorxiv.org/content/10.1101/2025.04.11.648307v1.abstract
+        badges:
+          - "GNN"
+          - "Protein-Protein Interactions"
+          - "Protein Engineering"
+          - "Therapeutic Applications"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/prescient-design/BRIDGE
+      
       - title: Delaunay Graph Neural Network (D-GNN)
         content: Meaningful Biological Priors as Guiding Constraints for Graph Neural Network-Based Antibody Developability Prediction.
         image: https://www.biorxiv.org/content/biorxiv/early/2023/06/28/2023.06.26.546331/F1.medium.gif
@@ -398,7 +426,7 @@ params:
     enable: true
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
+    btnName: E-Mail me
     btnLink: mailto:pranav.m.khade@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
@@ -416,7 +444,6 @@ params:
     socialNetworks:
       github: https://github.com/Pranavkhade
       linkedin: https://www.linkedin.com/in/pranavkhade/
-      twitter: https://twitter.com/khadepranav
       
   # List pages like blogs and posts
   listPages:
